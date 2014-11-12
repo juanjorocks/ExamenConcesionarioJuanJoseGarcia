@@ -8,15 +8,15 @@ import es.concesionario.integracion.VehiculoDAO;
 public class Concesionario {
 	 private VehiculoDAO vehiculodao = new VehiculoDAO();
 	 
-	 public int darAlta(String matricula, String marca, String modelo,String color, int caballos, boolean cambio) {
-	        Vehiculo vehiculo= new Vehiculo(String matricula, String marca, String modelo,String color, int caballos, boolean cambio);
+	 public int darAlta(String matricula, String marca, String modelo, String color, int caballos, boolean cambio) {
+	        Vehiculo vehiculo= new Vehiculo(matricula, marca, modelo, color, caballos, cambio);
 	        int id =vehiculodao.darAlta(vehiculo);
 	      return  id;
 	    }
 	 
 	 public Vehiculo consultarUno(int id) {
 	       
-	        Vehiculo vehiculos =vehiculodao.consultarUno(id);
+	        Vehiculo vehiculo =vehiculodao.consultarUno(id);
 	      
 	        return vehiculo;
 	    }
@@ -28,7 +28,7 @@ public class Concesionario {
 	    }
 	 
 	 public ArrayList<Vehiculo> consultarMatricula(String matricula) {
-    	 ArrayList<Vehiculo> paises=vehiculodao.consultarMatricula(matricula);
+    	 ArrayList<Vehiculo> vehiculos=vehiculodao.consultarMatricula(matricula);
          return vehiculos;
      }
 	 
@@ -49,7 +49,7 @@ public class Concesionario {
 			 String modelo, String color, int caballos, boolean cambio) {
 	        String msg;
 	        
-	        int filas= vehiculodao.actualizar(id, matricula, marca, modelo, color, caballos, cambio);
+	        int filas= vehiculodao.modificar(id, matricula, marca, modelo, color, caballos, cambio);
 	        if(filas>=1) {
 	            msg="Se ha actualizado " +filas +" vehiculos";
 	        }
