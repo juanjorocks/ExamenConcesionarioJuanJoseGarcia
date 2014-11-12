@@ -16,7 +16,8 @@ public class VehiculoDAO {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			cx=DriverManager.getConnection("jdbc:mysql:/localhost:3306/concesionario","root","root");
+			cx=DriverManager.getConnection("jdbc:mysql://localhost:3306/concesionario","root","root");
+			                                
 			cx.setAutoCommit(false);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

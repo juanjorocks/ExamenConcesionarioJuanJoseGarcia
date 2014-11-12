@@ -54,7 +54,7 @@ public class DarAltaServlet extends HttpServlet {
 		request.setAttribute("vehiculo",v);
 		//redirigir a la vista individual
 		RequestDispatcher rd;
-		rd=request.getRequestDispatcher("vistaindividual.jsp");
+		rd=request.getRequestDispatcher("vistaIndividual.jsp");
 		rd.forward(request, response);
 	}
 
