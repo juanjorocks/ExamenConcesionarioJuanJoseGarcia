@@ -11,7 +11,7 @@
 <% String mensaje= (String)request.getAttribute("mensaje"); %>
 <% if(mensaje==null)
          mensaje ="";%>
-     <h3>Respuesta de la base de datos:</h3>
+     <h3>NO SE PUEDE MODIFICAR</h3>
      <p><%=mensaje %></p>
      <p><a href="index.html"  >Ir a Inicio</a></p>
 </body>
