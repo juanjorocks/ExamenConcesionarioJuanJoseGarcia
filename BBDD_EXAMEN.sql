@@ -28,9 +28,19 @@ CREATE TABLE IF NOT EXISTS `vehiculo` (
   `cambio` tinyint(4) NOT NULL,
   PRIMARY KEY  (`id`),
   UNIQUE KEY `matricula` (`matricula`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
--- La exportación de datos fue deseleccionada.
+-- Volcando datos para la tabla concesionario.vehiculo: ~2 rows (aproximadamente)
+/*!40000 ALTER TABLE `vehiculo` DISABLE KEYS */;
+INSERT INTO `vehiculo` (`id`, `matricula`, `marca`, `modelo`, `color`, `caballos`, `cambio`) VALUES
+	(1, 'GG', 'G', '', 'G', 6, 0),
+	(2, 'A1111', 'SEAT', '2001', 'VERDE', 100, 0),
+	(6, 'C3333', 'AUDI', '2003', 'ROJO', 150, 0),
+	(7, 'D4444', 'KIA', '2004', 'BLANCO', 75, 0),
+	(8, 'E5555', 'RENAULT', '2005', 'GRIS', 100, 0),
+	(9, 'F6666', 'AUDI', '2006', 'GRIS', 80, 0),
+	(10, 'B2222', 'TOYOTA', '2002', 'AZUL', 250, 0);
+/*!40000 ALTER TABLE `vehiculo` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
