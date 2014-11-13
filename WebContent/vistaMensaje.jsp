@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>RESPUESTA</title>
+<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 </head>
 <body>
 <% String mensaje= (String)request.getAttribute("mensaje"); %>

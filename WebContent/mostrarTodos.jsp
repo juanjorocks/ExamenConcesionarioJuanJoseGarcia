@@ -7,6 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>MOSTRAR TODOS LOS VEHICULOS</title>
+<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 </head>
 <body>
 <% ArrayList<Vehiculo> vehiculos = (ArrayList<Vehiculo> )request.getAttribute("listado"); %>

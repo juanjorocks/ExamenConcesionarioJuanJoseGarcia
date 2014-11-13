@@ -6,6 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>VISTA INDIVIDUAL</title>
+<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 </head>
 <body>
 <form action="Procesar" method="get">
